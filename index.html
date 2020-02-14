@@ -16,4 +16,14 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/webcomponentsjs/2.2.10/custom-elements-es5-adapter.js"></script>
   <!-- <script src="main-es2015.js"></script> -->
   <script src="main-es5.js"></script>
+  <script>
+    function customEventListenerFunction(event) {
+      console.log('testfunc - ', event.detail);
+    }
+    window.addEventListener(
+      'phoenix-wc-wiki-ngx-ce-data-sent-test',
+      this.customEventListenerFunction,
+      true
+    );
+  </script>
 </html>
